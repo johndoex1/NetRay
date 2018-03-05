@@ -6,7 +6,7 @@ It takes a Json file of a parsed captured traffic and a keytab file and executes
 
 *NetRay* is provided with Silver Ticket attack detection module and it can be easily expandedsdfsd.
 \
-More information about the potential in Kerberos decryption can be found in the following [white paper]().
+More information about the potential in Kerberos decryption can be found in the following [white paper](https://www.cyberark.com/resources/).
 
 ## Overview
 Kerberos authentication protocol holds an important role in organizations' networks and it is an integral part of Microsoft domain network architecture.

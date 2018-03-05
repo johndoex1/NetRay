@@ -2,14 +2,14 @@
 # NetRay
 `NetRay` is a modular python tool that detects attacks against the Kerberos protocol.
 \
-It gets a Json file of a parsed captured traffic and a keytab file and executes each attack detection modules.
+It takes a Json file of a parsed captured traffic and a keytab file and executes each of the attack detection modules.
 
-*NetRay* is provided with Silver Ticket attack detection module and it can be easily expanded.
+*NetRay* is provided with Silver Ticket attack detection module and it can be easily expandedsdfsd.
 \
 More information about the potential in Kerberos decryption can be found in the following [white paper]().
 
 ## Overview
-Kerberos authentication protocol holds an important role in organizations' networks and it is an integral part of Microsoft domain’s networks.
+Kerberos authentication protocol holds an important role in organizations' networks and it is an integral part of Microsoft domain network architecture.
 As long as Kerberos communication is not being decrypted, attackers get an opportunity to act freely using Kerberos without being detected,
 all the while the encryption is being handed on a silver platter. 
 

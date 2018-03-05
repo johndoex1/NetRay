@@ -1,9 +1,8 @@
 # Guideline on creating new attack detection module.
-The Tool is modular and designed to be expanded.
-\
-In order to create a new attack detection, a class that inherits from AttackDetection need to be created.
-There is a simple interface that each attack detection needs to be written according to:
-```python
+The NetRay tool is modular and designed to be expanded to create new attack detection modules. In order to create a new attack detection, the developer needs to create a class that inherits from the abstract class `AttackDetection`.
+The `AttackDetection` class is a simple interface that each attack detection provides.
+
+```
 class AttackDetection(object):
     """
     This is the abstract class for attack detections. Every attack detection implementation should inherit from it.

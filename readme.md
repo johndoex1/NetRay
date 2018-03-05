@@ -149,7 +149,7 @@ python \NetRay.py  -j ./parsed_json  -k ./my_keytab -l ./lan_log
 
  
 
-Please read through our [contributing guidelines](myr/CONTRIBUTING.md). Included is a guideline on creating new attack detection module.
+Please read through our [contributing guidelines](https://github.com/cyberark/NetRay/blob/master/create_attack_detection_guideline.md). Included is a guideline on creating new attack detection module.
 
 ## Contact Us
 Whether you want to report a bug or give some

@@ -24,7 +24,7 @@ For *NetRay* to run, Impacket module is required.
 
 ## Usage:
 *NetRay* needs a json file and a keytab.
-```python
+```
 python .\NetRay.py  -h
 usage: NetRay.py [-h] [-j] -k  [-l]
 
@@ -111,7 +111,7 @@ optional arguments:
 
 ## Example usage:
 Tested with Python 2 on Linux and Windows
-```python
+```
 python \NetRay.py  -j ./parsed_json  -k ./my_keytab -l ./lan_log
 
 2018-01-02 06:51:42,034  INFO   Started Json deserialization.

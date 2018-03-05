@@ -1,20 +1,22 @@
 
 # NetRay
-`NetRay` is a modular python tool that detects attacks against the Kerberos protocol.
+`NetRay` is a modular, python tool that detects attacks against the Kerberos protocol.
 \
-It takes a Json file of a parsed captured traffic and a keytab file and executes each of the attack detection modules.
+It gets a Json file of a parsed captured traffic and a keytab file and executes each attack detection modules.
 
-*NetRay* is provided with Silver Ticket attack detection module and it can be easily expandedsdfsd.
+*NetRay* is provided with Silver Ticket attack detection module and it can be easily expanded.
 \
-More information about the potential in Kerberos decryption can be found in the following [white paper](https://www.cyberark.com/resources/).
+More information about the potential in Kerberos decryption can be found in this [white paper](https://www.cyberark.com/resources/).
+
 
 ## Overview
-Kerberos authentication protocol holds an important role in organizations' networks and it is an integral part of Microsoft domain network architecture.
+The Kerberos authentication protocol holds an important role in an organizations' networks and it is an integral part of Microsoft domain’s networks.
 As long as Kerberos communication is not being decrypted, attackers get an opportunity to act freely using Kerberos without being detected,
 all the while the encryption is being handed on a silver platter. 
 
 Kerberos decryption gives a better view of what is happening in the network.
-This POC provides the blue side a simple tool to detect attacks against the protocol.
+This tool provides the blue side a simple approach to detect attacks against the protocol.
+
 
 ## Requirements:
 For *NetRay* to run, Impacket module is required. 
@@ -42,15 +44,15 @@ optional arguments:
 
 -   Json file
         
-        The network need to be captured at a central point between the servers and the endpoints.
+        The network needs to be captured at a central point between the servers and the endpoints.
         The Pcap need to be parsed with a tool that can decrypt kerberos on to Json format.
-	
         As an example, Tshark can parse and decrypt pcap.
         TSHARK_BIN_PATH -r PCAP_PATH -K KEYTAB_PATH -T json kerberos > OUTPUT_JSON_PATH
 	
 	There are other tools that can be used, for an example - microsoft network monitor.
 
 -   Keytab file
+
 
     The keytab is used to detect Silver Ticket attack. 
     The keytab needs to contain keys of the relevant services from the time of capture.
@@ -110,6 +112,7 @@ optional arguments:
     Now you have a keytab that can be provided to the tool.
     \
     I would like to thank Alva Lease 'Skip' Duckwall IV and Christopher Campbel for a [great blog post](http://passing-the-hash.blogspot.co.il/2016/06/nix-kerberos-ms-active-directory-fun.html).
+
     
 
 ## Example usage:
@@ -134,8 +137,7 @@ python \NetRay.py  -j ./parsed_json  -k ./my_keytab -l ./lan_log
 **l**   - log file path
 
 ## Code flow  :
-    The tool input is a Json parsed pcap file and a keytab. It deserialize the file into a list of packets (each packet is a nested dictionary). Then, each attack 
-    detection module is called with the packets list and the parsed args. At last, the detection results are being printed to the user.
+The tool input is a Json parsed pcap file and a keytab. It deserialize the file into a list of packets (each packet is a nested dictionary). Then, each attack detection module is called with the packets list and the parsed args. At last, the detection results are being printed to the user.
 
 ## Infrastructure content
 - constants: Consts That are not specific for a certain module
@@ -158,4 +160,5 @@ Please read through our [contributing guidelines](https://github.com/cyberark/Ne
 Whether you want to report a bug or give some
 suggestions, drop me a line at
 ido.hoorvitch@cyberark.com
+
 

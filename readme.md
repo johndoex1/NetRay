@@ -44,8 +44,11 @@ optional arguments:
         
         The network need to be captured at a central point between the servers and the endpoints.
         The Pcap need to be parsed with a tool that can decrypt kerberos on to Json format.
+	
         As an example, Tshark can parse and decrypt pcap.
         TSHARK_BIN_PATH -r PCAP_PATH -K KEYTAB_PATH -T json kerberos > OUTPUT_JSON_PATH
+	
+	There are other tools that can be used, for an example - microsoft network monitor.
 
 -   Keytab file
 

@@ -6,7 +6,7 @@ It takes a Json file of a parsed captured traffic and a keytab file and executes
 
 *NetRay* is provided with a Silver Ticket attack detection module and it can be easily expanded.
 \
-More information about the potential in Kerberos decryption can be found in this [white paper](https://www.cyberark.com/resources/).
+More information about the potential in Kerberos decryption can be found in this [white paper](https://www.cyberark.com/resource/kerberos-decryption/).
 
 
 ## Overview

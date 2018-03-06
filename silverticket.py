@@ -5,10 +5,10 @@
     https://www.cyberark.com/blog/service-accounts-weakest-link-chain/
     https://adsecurity.org/?p=2011
 
-    Silver ticket is an attack in which attacker stole a service key.
-    With that key an attacker can send a forged service ticket at ap-req
-    At the service ticket the attacker can change which groups they belongs to
-    And also can use a none exists username in order to elevate his privileges.
+    Silver ticket is an attack that takes place after an attacker compromise a service key / password.
+    With that key an attacker can create and send a forged service ticket at ap-req.
+    In the service ticket the attacker can change which groups they belong to
+    and also can use a none exists username in order to elevate his privileges.
 
     The attack is detected by verify the privsvr (KRBTGT) signature.
     The privsvr signature is  a checksum of the server signature field encrypted with KRBTGT key.

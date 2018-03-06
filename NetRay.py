@@ -16,7 +16,7 @@
         2.Import the module here.
         3.Add the class name to ATTACK_DETECTIONS_TO_EXECUTE list.
 
-    Attacks can be found in externals files, example - silverticket.py.
+    Attack detection modules can be found in externals files, example - silverticket.py.
 
     Author: Hoorvitch Ido (@hoorvitch)
     Copyright: © 2018 CyberArk Software Ltd. All rights reserved
